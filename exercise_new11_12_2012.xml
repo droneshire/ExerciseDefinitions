@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<EXERCISE name="ExternalRotation90" nummotions = "2">
+	<MOTION id = "1" name = "ExternalDown" numsteps = "2">
+		<STEPS id = "1" numjoints = "1" numcombos = "2">
+			<JOINTCOMBOS>
+				<COMBO jcname = "e_s_sc_l">
+					<ANGLE> 180 </ANGLE>
+					<BUFFER> 10 </BUFFER>
+				</COMBO>
+				<COMBO jcname = "w_e_s_l">
+					<ANGLE> 90 </ANGLE>
+					<BUFFER> 10 </BUFFER>
+				</COMBO>
+			</JOINTCOMBOS>
+			<JOINTS>
+				<JOINT jname = "WristLeft">
+					<ZAXIS> ElbowLeft </ZAXIS>
+					<YAXIS> None </YAXIS>
+					<XAXIS> None </XAXIS>
+				</JOINT>
+			</JOINTS>
+		</STEPS>
+		<STEPS id = "2" numjoints = "1" numcombos = "2">
+			<JOINTCOMBOS>
+				<COMBO jcname = "e_s_sc_l">
+					<ANGLE> 180 </ANGLE>
+					<BUFFER> 10 </BUFFER>
+				</COMBO>
+				<COMBO jcname = "w_e_s_l">
+					<ANGLE> 90 </ANGLE>
+					<BUFFER> 10 </BUFFER>
+				</COMBO>
+			</JOINTCOMBOS>
+			<JOINTS>
+				<JOINT jname = "WristLeft">
+					<ZAXIS> None </ZAXIS>
+					<YAXIS> ElbowLeft </YAXIS>
+					<XAXIS> None </XAXIS>
+				</JOINT>
+			</JOINTS>
+		</STEPS>
+	</MOTION>
+	<MOTION id = 2 name = "ExternalUp" numsteps = "2">
+		<STEPS id = "1" numjoints = "1" numcombos = "2">
+			<JOINTCOMBOS>
+				<COMBO jcname = "e_s_sc_l">
+					<ANGLE> 180 </ANGLE>
+					<BUFFER> 10 </BUFFER>
+				</COMBO>
+				<COMBO jcname = "w_e_s_l">
+					<ANGLE> 90 </ANGLE>
+					<BUFFER> 10 </BUFFER>
+				</COMBO>
+			</JOINTCOMBOS>
+			<JOINTS>
+				<JOINT jname = "WristLeft">
+					<ZAXIS> None </ZAXIS>
+					<YAXIS> ElbowLeft </YAXIS>
+					<XAXIS> None </XAXIS>
+				</JOINT>
+			</JOINTS>
+		</STEPS>
+		<STEPS id = "2" numjoints = "1" numcombos = "2">
+			<JOINTCOMBOS>
+				<COMBO jcname = "e_s_sc_l">
+					<ANGLE> 180 </ANGLE>
+					<BUFFER> 10 </BUFFER>
+				</COMBO>
+				<COMBO jcname = "w_e_s_l">
+					<ANGLE> 90 </ANGLE>
+					<BUFFER> 10 </BUFFER>
+				</COMBO>
+			</JOINTCOMBOS>
+			<JOINTS>
+				<JOINT jname = "WristLeft">
+					<ZAXIS> ElbowLeft </ZAXIS>
+					<YAXIS> None </YAXIS>
+					<XAXIS> None </XAXIS>
+				</JOINT>
+			</JOINTS>
+		</STEPS>
+	</MOTION>
+</EXERCISE>

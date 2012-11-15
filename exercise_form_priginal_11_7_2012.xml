@@ -1,0 +1,609 @@
+<exercise>
+	<description>
+		<name> External Rotation With Arm Abducted 90 Degrees </name>
+		<extremityname> LeftArm </extremityname>
+		<injury> Rotator Cuff </injury>
+		<Kinectjoints>
+			ElbowRight WristRight ShoulderRight ShoulderLeft Head ShoulderCenter
+		</Kinectjoints>
+	</description>
+	
+	<initposition>
+		<body>
+			<stance> 1.5 feet </stance>
+			<standsit> standing </standsit>
+			<facing> forward </facing>
+		</body>
+		<jointpositions>
+			<joint>
+				<jointname> ElbowRight </jointname>
+				<current>
+					<!--the current jointname is inline with these joints-->
+					<inline> ShoulderRight ShoulderLeft Head ShoulderCenter </inline>
+					<atangle> 
+						<!-- the current jointname is the corner, these 
+						are the points that it references to-->
+						<angledegrees> 90 </angledegrees>
+						<point1> ShoulderRight </point1>
+						<point2> WristRight</point2>
+					</atangle>
+					<orientation>
+						<xaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> none </equal>
+						</xaxis>
+						<yaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> none  </equal>
+						</yaxis>
+						<zaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> none </equal>
+						</zaxis>
+					</orientation>
+				</current>
+			</joint>
+			<joint>
+				<jointname> ShoulderCenter </jointname>
+				<current>
+					<!--the current jointname is inline with these joints-->
+					<inline> ShoulderRight ShoulderLeft Head ElbowRight </inline>
+					<atangle> 
+						<!-- the current jointname is the corner, these 
+						are the points that it references to-->
+						<angledegrees> 90 </angledegrees>
+						<point1> Head </point1>
+						<point2> ShoulderRight </point2>
+					</atangle>
+					<orientation>
+						<xaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> none </equal>
+						</xaxis>
+						<yaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> none </equal>
+						</yaxis>
+						<zaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> none </equal>
+						</zaxis>
+					</orientation>
+				</current>
+			</joint>
+		</jointpositions>
+	</initposition>
+	
+	<motion>
+	
+		<motionname> External Rotate Down </motionname>
+		
+		<segment>
+			<bodyposition>
+				<segmentnum> 1 </segmentnum>
+				<stance> 1.5 feet </stance>
+				<standsit> standing </standsit>
+				<facing> forward </facing>
+			</bodyposition>
+			<position>
+				<joint>
+					<jointname> ElbowRight </jointname>
+					<current>
+						<!--the current jointname is inline with these joints-->
+						<inline> ShoulderRight ShoulderLeft Head ShoulderCenter </inline>
+						
+						<atangle> 
+							<!-- the current jointname is the corner, these 
+							are the points that it references to-->
+							<angledegrees> 90 </angledegrees>
+							<point1> ShoulderRight </point1>
+							<point2> WristRight </point2>
+						</atangle>
+						
+						<orientation>
+							<xaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</xaxis>
+							
+							<yaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> ShoulderRight </equal>
+							</yaxis>
+							
+							<zaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</zaxis>
+						</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> equal </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> equal </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+				</joint>
+				<joint>
+					<jointname> WristRight </jointname>
+					<current>
+						<!--the current jointname is inline with these joints-->
+						<inline> HandRight ElbowRight </inline>
+						
+						<atangle> 
+							<!-- the current jointname is the corner, these 
+							are the points that it references to-->
+							<angledegrees> 180 </angledegrees>
+							<point1> HandRight </point1>
+							<point2> ElbowRight </point2>
+						</atangle>
+						
+						<orientation>
+							<xaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</xaxis>
+							
+							<yaxis>
+								<greater> ElbowRight </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</yaxis>
+							
+							<zaxis>
+								<greater> ElbowRight </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</zaxis>
+						</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> less </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> greater </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+				</joint>
+				<joint>
+					<jointname> ShoulderCenter </jointname>
+					<current>
+					<!--the current jointname is inline with these joints-->
+					<inline> ShoulderRight ShoulderLeft Head ElbowRight </inline>
+					<atangle> 
+						<!-- the current jointname is the corner, these 
+						are the points that it references to-->
+						<angledegrees> 90 </angledegrees>
+						<point1> Head </point1>
+						<point2> ShoulderRight </point2>
+					</atangle>
+					<orientation>
+						<xaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> none </equal>
+						</xaxis>
+						<yaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> ElbowRight </equal>
+						</yaxis>
+						<zaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> none </equal>
+						</zaxis>
+					</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> equal </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> equal </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+			</joint>
+			</position>
+		</segment>
+		
+		<segment>
+			<bodyposition>
+				<segmentnum> 2 </segmentnum>
+				<stance> 1.5 feet </stance>
+				<standsit> standing </standsit>
+				<facing> forward </facing>
+			</bodyposition>
+			<position>
+			<joint>
+					<jointname> ElbowRight </jointname>
+					<current>
+						<!--the current jointname is inline with these joints-->
+						<inline> ShoulderRight ShoulderLeft Head ShoulderCenter </inline>
+						
+						<atangle> 
+							<!-- the current jointname is the corner, these 
+							are the points that it references to-->
+							<angledegrees> 90 </angledegrees>
+							<point1> ShoulderRight </point1>
+							<point2> WristRight </point2>
+						</atangle>
+						
+						<orientation>
+							<xaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</xaxis>
+							
+							<yaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</yaxis>
+							
+							<zaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</zaxis>
+						</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> equal </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> equal </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+				</joint>
+				<joint>
+					<jointname> WristRight </jointname>
+					<current>
+						<!--the current jointname is inline with these joints-->
+						<inline> HandRight ElbowRight </inline>
+						
+						<atangle> 
+							<!-- the current jointname is the corner, these 
+							are the points that it references to-->
+							<angledegrees> 180 </angledegrees>
+							<point1> HandRight </point1>
+							<point2> ElbowRight </point2>
+						</atangle>
+						
+						<orientation>
+							<xaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</xaxis>
+							
+							<yaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</yaxis>
+							
+							<zaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> ElbowRight ShoulderRight </equal>
+							</zaxis>
+						</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> less </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> greater </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+				</joint>
+			</position>
+		</segment>	
+	</motion>
+	
+	<motion>
+	
+		<motionname> External Rotate Up </motionname>
+		
+		<segment>
+			<bodyposition>
+				<segmentnum> 1 </segmentnum>
+				<stance> 1.5 feet </stance>
+				<standsit> standing </standsit>
+				<facing> forward </facing>
+			</bodyposition>
+			<position>
+				<joint>
+					<jointname> ElbowRight </jointname>
+					<current>
+						<!--the current jointname is inline with these joints-->
+						<inline> ShoulderRight ShoulderLeft Head ShoulderCenter </inline>
+						
+						<atangle> 
+							<!-- the current jointname is the corner, these 
+							are the points that it references to-->
+							<angledegrees> 90 </angledegrees>
+							<point1> ShoulderRight </point1>
+							<point2> WristRight </point2>
+						</atangle>
+						
+						<orientation>
+							<xaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</xaxis>
+							
+							<yaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> ShoulderRight </equal>
+							</yaxis>
+							
+							<zaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</zaxis>
+						</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> equal </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> equal </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+				</joint>
+				<joint>
+					<jointname> WristRight </jointname>
+					<current>
+						<!--the current jointname is inline with these joints-->
+						<inline> HandRight ElbowRight </inline>
+						
+						<atangle> 
+							<!-- the current jointname is the corner, these 
+							are the points that it references to-->
+							<angledegrees> 180 </angledegrees>
+							<point1> HandRight </point1>
+							<point2> ElbowRight </point2>
+						</atangle>
+						
+						<orientation>
+							<xaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</xaxis>
+							
+							<yaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</yaxis>
+							
+							<zaxis>
+								<greater> ElbowRight </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</zaxis>
+						</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> greater </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> less </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+				</joint>
+				<joint>
+					<jointname> ShoulderCenter </jointname>
+					<current>
+					<!--the current jointname is inline with these joints-->
+					<inline> ShoulderRight ShoulderLeft Head ElbowRight </inline>
+					<atangle> 
+						<!-- the current jointname is the corner, these 
+						are the points that it references to-->
+						<angledegrees> 90 </angledegrees>
+						<point1> Head </point1>
+						<point2> ShoulderRight </point2>
+					</atangle>
+					<orientation>
+						<xaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> none </equal>
+						</xaxis>
+						<yaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> ElbowRight </equal>
+						</yaxis>
+						<zaxis>
+							<greater> none </greater>
+							<less> none </less>
+							<equal> ElbowRight </equal>
+						</zaxis>
+					</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> equal </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> equal </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+			</joint>
+			</position>
+		</segment>
+		
+		<segment>
+			<bodyposition>
+				<segmentnum> 2 </segmentnum>
+				<stance> 1.5 feet </stance>
+				<standsit> standing </standsit>
+				<facing> forward </facing>
+			</bodyposition>
+			<position>
+			<joint>
+					<jointname> ElbowRight </jointname>
+					<current>
+						<!--the current jointname is inline with these joints-->
+						<inline> ShoulderRight ShoulderLeft Head ShoulderCenter </inline>
+						
+						<atangle> 
+							<!-- the current jointname is the corner, these 
+							are the points that it references to-->
+							<angledegrees> 90 </angledegrees>
+							<point1> ShoulderRight </point1>
+							<point2> WristRight </point2>
+						</atangle>
+						
+						<orientation>
+							<xaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</xaxis>
+							
+							<yaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> ShoulderRight </equal>
+							</yaxis>
+							
+							<zaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> ShoulderRight </equal>
+							</zaxis>
+						</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> equal </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> equal </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+				</joint>
+				<joint>
+					<jointname> WristRight </jointname>
+					<current>
+						<!--the current jointname is inline with these joints-->
+						<inline> HandRight ElbowRight </inline>
+						
+						<atangle> 
+							<!-- the current jointname is the corner, these 
+							are the points that it references to-->
+							<angledegrees> 180 </angledegrees>
+							<point1> HandRight </point1>
+							<point2> ElbowRight </point2>
+						</atangle>
+						
+						<orientation>
+							<xaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</xaxis>
+							
+							<yaxis>
+								<greater> ElbowRight </greater>
+								<less> none </less>
+								<equal> none </equal>
+							</yaxis>
+							
+							<zaxis>
+								<greater> none </greater>
+								<less> none </less>
+								<equal> ElbowRight ShoulderRight </equal>
+							</zaxis>
+						</orientation>
+					</current>
+					<previous>
+						<compareorientation>
+							<xaxis>
+								<comparex> equal </comparex>
+							</xaxis>
+							<yaxis>
+								<comparey> greater </comparey>
+							</yaxis>
+							<zaxis>
+								<comparez> less </comparez>
+							</zaxis>
+						</compareorientation>	
+					</previous>
+				</joint>
+			</position>
+		</segment>	
+	</motion>
+	
+</exercise>
